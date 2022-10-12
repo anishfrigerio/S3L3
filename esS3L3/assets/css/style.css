@@ -1,0 +1,13 @@
+body{
+    background: linear-gradient(-45deg, #d9631b, #c53813, #d7601a);
+    text-align: center;
+}
+h1{
+    color: aliceblue;
+}
+fieldset{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%; 
+}
