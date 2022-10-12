@@ -29,14 +29,13 @@ function scegliTorta(mela, arancia) {
 }
 document.getElementById('torta').innerHTML = scegliTorta(3, 5);
 
-var btn = document.getElementById('calcola').innerHTML;
+var btn = document.getElementById('calcola');
 
-btn.addEventListener('click', function(){
-    let spesaCibo = number(document.getElementById('cibo').value);
-    let spesaDetersivi = number(document.getElementById('detersivi').value);
-    let spesaAbiti = number(document.getElementById('abiti').value);
-    let somma = spesaCibo + spesaDetersivi + spesaAbiti;
-    document.getElementById('totale').innerHTML += somma;
-});
-
+btn.addEventListener ('click', function() {
+    let cibo = Number (document.getElementById('cibo').valueAsNumber);
+    let detersivi = Number (document.getElementById('detersivi').valueAsNumber);
+    let abiti = Number (document.getElementById('abiti').valueAsNumber);
+    let somma = cibo + detersivi + abiti;
+    document.getElementById('totale').innerHTML = somma;
+})
 
