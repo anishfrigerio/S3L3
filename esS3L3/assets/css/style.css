@@ -9,5 +9,7 @@ fieldset{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%; 
+    width: auto; 
+    margin-left: 30%;
+    margin-right: 30%;
 }
